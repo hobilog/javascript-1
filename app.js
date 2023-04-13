@@ -1,15 +1,16 @@
-// Порядок операторов
+let a = 5;
+let b = 5.6;
+console.log(typeof a);
+a = 'строка';
+console.log(typeof a);
+let isAdmin = false;
+console.log(typeof isAdmin)
+e = "dasdas"
+console.log(typeof e)
 
-const isSuited = 100 - 10 > 90 - 5
-console.log(isSuited)
-
-// 100 - (12) 10 >(10) 90 - (12) 5
-
-const a = (6 + 10) / 2
-console.log(a)
-
-let b;
 let c;
-c = b = 100 + 50;
-console.log(c)
-console.log(b)
+console.log(typeof c);
+c = null;
+console.log(typeof c);
+let d = null;
+console.log(typeof (d == null));
