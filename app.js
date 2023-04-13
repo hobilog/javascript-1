@@ -1,13 +1,14 @@
-// Базовые арифметические операторы
+// Операторы присваивания
+let age = 18 + 5;
+age += 2;
+age -= 3;
+age *= 2;
+age /= 2;
 
-const width = 10;
-const height = 5;
-const space = width * height;
-const newWidth = width / 4;
-const volume = 2 ** 3; 
-console.log(volume);
+age++;
+age--;
+console.log(age)
 
-// Строки
-const city  = 'Москва';
-const street = 'Новослободская';
-console.log(city + ', ' + street + ' ' + 5);
+// Операторы сравнения
+const vasia = 20;
+console.log(age == vasia);
