@@ -1,12 +1,39 @@
-const secretNumber = '7';
+const role = 'admin';
 
-if (secretNumber === 7) {
-    console.log('Угадал строго');
+switch (role) {
+    case 'manager': // role === 'manager'
+        console.log('Менеджер');
+        break;
+    case 'admin':
+        console.log('Админ');
+        break; 
+    case 'seo':
+        console.log('СЕО');
+        break;
+    default:
+        console.log('Мы тебя не знаем!');
 }
 
-if (secretNumber == 7) {
-    console.log('Угадал не строго');
+switch (role) {
+    case 'manager': // role === 'manager'
+    case 'admin':
+        console.log('Не руководитель');
+        break; 
+    case 'seo':
+        console.log('Руководитель');
+        break;
+    default:
+        console.log('Мы тебя не знаем!');
 }
 
-const q = prompt('Введите число');
-console.log(q)
+const num = 1;
+
+switch(true) {
+    case num > 0:
+        console.log('Положительный');
+        break;
+    case num < 0:
+        console.log('Отрицательный');
+    default:
+        console.log('Ноль!');
+}
