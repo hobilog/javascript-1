@@ -1,10 +1,9 @@
-const age = '18';
-console.log(Number(age) + 5)
-console.log(age - 3);
-const userName = 'Вася';
-console.log(Number(userName) + 5)
-console.log(typeof NaN);
-console.log(String(4) + 7 + 5);
-console.log(Boolean('') + 10)
-const a = 2 + '10';
-console.log(a - 10)
+const money = 4;
+const price = 50;
+if (money >= price) {
+    console.log('Может купить наш продукт.');
+} else if (money >= 5) {
+    console.log('Куплен мини продукт.')
+} else {
+    console.log(`Не хватает денег. Нужно еще ${price - money} $.`)
+}
