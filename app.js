@@ -1,9 +1,9 @@
-const money = 4;
-const price = 50;
-if (money >= price) {
-    console.log('Может купить наш продукт.');
-} else if (money >= 5) {
-    console.log('Куплен мини продукт.')
+const depositSum = 12000;
+const procents = 0.07;
+const price = 13500;
+const finalSum = depositSum * (1 + procents / 12)**24
+if (finalSum >= price) {
+    console.log(`Вы можете купить дом. Остаток после покупки: ${finalSum - price} $.`)
 } else {
-    console.log(`Не хватает денег. Нужно еще ${price - money} $.`)
+    console.log(`Вы не можете купить дом. Для покупки не хватает: ${price - finalSum} $.`)
 }
